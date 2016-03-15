@@ -1,10 +1,7 @@
 require 'bitbucket2/commit'
 require 'bitbucket2/repository'
 require 'bitbucket2/pull_request'
-
 require 'restroom'
-
-require 'byebug'
 
 
 module Bitbucket2

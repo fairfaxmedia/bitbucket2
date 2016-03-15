@@ -6,6 +6,5 @@ module Bitbucket2
 
     attribute :id, String
     attribute :description, String
-
   end
 end
