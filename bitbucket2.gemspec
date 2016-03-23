@@ -29,6 +29,9 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency "restroom"
   spec.add_runtime_dependency 'virtus'
   spec.add_runtime_dependency 'oauth2'
+  spec.add_runtime_dependency 'activemodel'
+  spec.add_runtime_dependency 'faraday_middleware'
+  spec.add_runtime_dependency 'faraday-http-cache'
 
   spec.add_development_dependency "bundler", "~> 1.10"
   spec.add_development_dependency "rake", "~> 10.0"

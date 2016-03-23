@@ -3,11 +3,15 @@ require 'bitbucket2/client'
 
 
 module Bitbucket2
+  def self.configuration
+    @configuration ||= Configuration.new
+  end
+
   def self.configure
-    yield @configuration ||= Configuration.new
+    yield self.configuration
   end
 
   class Configuration
-    attr_accessor :oauth2_config
+    attr_accessor :stack
   end
 end

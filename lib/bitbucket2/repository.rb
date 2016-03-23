@@ -1,8 +1,8 @@
-require 'virtus'
+require 'bitbucket2/model'
 
 module Bitbucket2
   class Repository
-    include Virtus.model
+    include Model
 
     attribute :name, String
     attribute :full_name, String
