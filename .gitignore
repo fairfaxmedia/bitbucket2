@@ -9,3 +9,4 @@
 /tmp/
 defaults.yml
 .byebug_history
+*.gem
