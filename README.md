@@ -30,7 +30,15 @@ Bitbucket2::Client.new.repositories.all
 
 To collect private data, pass an oauth_token into the constructor:
 ```
-Bitbucket2::Client.new(oauth_token: token).repositories.all
+Bitbucket2.configure do |config|
+  config.stack = -> (faraday) {
+    #faraday.use :http_cache, store: cache_store
+    faraday.request :oauth2, valid_oauth_token
+    faraday.response :logger
+  }
+end
+
+Bitbucket2::Client.new.repositories.all
 ```
 
 These tokens can be collected in a variety of ways - the Rakefile provides a number of tasks to facilitate this.
