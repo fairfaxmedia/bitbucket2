@@ -28,7 +28,7 @@ Use the Bitbucket2::Client class to get all public repositories like this:
 Bitbucket2::Client.new.repositories.all
 ```
 
-To collect private data, pass an oauth_token into the constructor:
+To collect private data, pass an oauth_token into the configuration:
 ```
 Bitbucket2.configure do |config|
   config.stack = -> (faraday) {
