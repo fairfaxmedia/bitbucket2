@@ -12,5 +12,6 @@ module Bitbucket2
     attribute :author, User
     attribute :reviewers, [User]
     attribute :participants, [Participant]
+    attribute :merge_commit, Commit
   end
 end

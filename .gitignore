@@ -10,3 +10,4 @@
 defaults.yml
 .byebug_history
 *.gem
+/vendor/bundle/
