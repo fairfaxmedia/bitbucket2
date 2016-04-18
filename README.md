@@ -43,7 +43,7 @@ Bitbucket2::Client.new.repositories.all
 
 These tokens can be collected in a variety of ways - the Rakefile provides a number of tasks to facilitate this.
 
-If you have client credentials for BitBucket's OAuth service, you can put them in `defaults.yml` like this:
+If you have access to Fairfax's internal oauth tools and client credentials for BitBucket's OAuth service, you can put them in `defaults.yml` like this:
 
 ```
 credentials:
